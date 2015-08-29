@@ -2,5 +2,11 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="Rails enterpriseape: development" uuid="e97f8f6c-dfcc-4fc3-871c-bd88b136818c" />
+    <data-source name="Rails enterpriseape: test" uuid="d183dcd4-15b3-448d-88b5-5dff6ac14daf">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails enterpriseape: production" uuid="7b1867c7-1ff8-4993-8a0d-69c113192c06">
+      <first-sync>true</first-sync>
+    </data-source>
   </component>
 </project>
