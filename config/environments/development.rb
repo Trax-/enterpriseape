@@ -39,7 +39,10 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
-  class Application < Rails::Application
-    config.web_console.whitelisted_ips = '198.147.254.0/24'
-  end
+  config.action_mailer.default_url_options = { :host => 'beagle.ocsnet.com:3000' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+
+  config.web_console.whitelisted_ips = '198.147.254.0/24'
+
 end

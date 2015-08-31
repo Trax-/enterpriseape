@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="MySQL - development_rails@falcon" uuid="942a0917-9c19-40c5-945d-34aab362efaf">
-      <secret-storage>master_key</secret-storage>
+    <data-source name="Rails enterpriseape: development" uuid="6f830cb1-0644-4ea0-987d-22c4ba855f63">
       <user-name>tlo</user-name>
+      <user-password>dfcbdfd8dfd8df98df9cdfd3</user-password>
       <schema-pattern>development_rails.*</schema-pattern>
       <default-schemas>development_rails.*</default-schemas>
     </data-source>
-    <data-source name="Rails enterpriseape: development" uuid="770ceb18-157b-4896-a52a-d3dc2e533b9b">
-      <first-sync>true</first-sync>
+    <data-source name="Rails enterpriseape: test" uuid="592d4ff9-7a59-41eb-9ad3-a2e5bef8ea59">
       <user-name>tlo</user-name>
       <user-password>dfcbdfd8dfd8df98df9cdfd3</user-password>
+      <schema-pattern>test_rails.*</schema-pattern>
+      <default-schemas>test_rails.*</default-schemas>
     </data-source>
-    <data-source name="Rails enterpriseape: test" uuid="a7d5e236-089c-4397-a943-8e056ea0b72a">
-      <first-sync>true</first-sync>
-      <user-name>tlo</user-name>
-      <user-password>dfcbdfd8dfd8df98df9cdfd3</user-password>
-    </data-source>
-    <data-source name="Rails enterpriseape: production" uuid="b2603250-264c-4260-beab-363dd8e93bb6">
+    <data-source name="Rails enterpriseape: production" uuid="c504e17d-d7c5-4c61-87bd-35af3f21c6bd">
       <first-sync>true</first-sync>
     </data-source>
   </component>
