@@ -22,4 +22,13 @@
       <index name="unique_schema_migrations" unique="true" columns="version"/>
     </table>
   </data-source>
+  <data-source name="Rails enterpriseape: development" uuid="770ceb18-157b-4896-a52a-d3dc2e533b9b">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails enterpriseape: test" uuid="a7d5e236-089c-4397-a943-8e056ea0b72a">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails enterpriseape: production" uuid="b2603250-264c-4260-beab-363dd8e93bb6">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>
