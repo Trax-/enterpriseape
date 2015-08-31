@@ -7,5 +7,20 @@
       <schema-pattern>development_rails.*</schema-pattern>
       <default-schemas>development_rails.*</default-schemas>
     </data-source>
+    <data-source name="Rails enterpriseape: development" uuid="8a8c1d4f-fd79-43d2-94cd-68e419b19399">
+      <user-name>tlo</user-name>
+      <user-password>dfcbdfd8dfd8df98df9cdfd3</user-password>
+      <schema-pattern>development_rails.*</schema-pattern>
+      <default-schemas>development_rails.*</default-schemas>
+    </data-source>
+    <data-source name="Rails enterpriseape: test" uuid="4bc2b964-eb1b-491f-beb9-cc9c16301a7a">
+      <user-name>tlo</user-name>
+      <user-password>dfcbdfd8dfd8df98df9cdfd3</user-password>
+      <schema-pattern>test_rails.*</schema-pattern>
+      <default-schemas>test_rails.*</default-schemas>
+    </data-source>
+    <data-source name="Rails enterpriseape: production" uuid="a6d8ca20-e889-42ec-aab1-79fc072996b3">
+      <first-sync>true</first-sync>
+    </data-source>
   </component>
 </project>
