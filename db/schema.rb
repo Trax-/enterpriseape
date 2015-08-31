@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150829161112) do
+ActiveRecord::Schema.define(version: 20150831134516) do
 
   create_table "invoices", force: :cascade do |t|
     t.datetime "date"
     t.string "company", limit: 255
-    t.decimal "tax", precision: 10
+    t.decimal "tax", precision: 10, scale:2
     t.string "salesperson", limit: 255
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

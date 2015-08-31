@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="Rails enterpriseape: development" uuid="e97f8f6c-dfcc-4fc3-871c-bd88b136818c" />
-    <data-source name="Rails enterpriseape: test" uuid="d183dcd4-15b3-448d-88b5-5dff6ac14daf">
-      <first-sync>true</first-sync>
-    </data-source>
-    <data-source name="Rails enterpriseape: production" uuid="7b1867c7-1ff8-4993-8a0d-69c113192c06">
-      <first-sync>true</first-sync>
+    <data-source name="MySQL - development_rails@falcon" uuid="942a0917-9c19-40c5-945d-34aab362efaf">
+      <secret-storage>master_key</secret-storage>
+      <user-name>tlo</user-name>
+      <schema-pattern>development_rails.*</schema-pattern>
+      <default-schemas>development_rails.*</default-schemas>
     </data-source>
   </component>
 </project>
