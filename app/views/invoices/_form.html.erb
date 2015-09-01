@@ -1,8 +1,8 @@
 <div class="row">
-  <%= form_for @invoice, html: {class: 'form-horizontal'} do |f| %>
+  <%= form_for @invoice, html: { class: 'form-horizontal' } do |f| %>
       <% if @invoice.errors.any? %>
           <div id="error_explanation">
-            <h2><%= pluralize(@invoice.errors.count, "error") %> prohibited this invoice from being saved:</h2>
+            <h2><%= pluralize(@invoice.errors.count, 'error') %> prohibited this invoice from being saved:</h2>
 
             <ul>
               <% @invoice.errors.full_messages.each do |message| %>
@@ -13,7 +13,7 @@
       <% end %>
 
       <div class="control-group">
-        <%= f.label :date, class: 'control-label' %>
+        <%= f.label :date, class: 'control-label' %><br/>
         <div class="controls">
           <%= f.date_select :date %>
         </div>
@@ -33,7 +33,7 @@
       <div class="control-group">
         <%= f.label :employee_id, class: 'control-label' %>
         <div class="controls">
-          <%= collection_select(:invoice, :employee_id, Employee.all, :id, :name, {}, {:multiple => false}) %>
+          <%= collection_select(:invoice, :employee_id, Employee.all, :id, :name, {}, { :multiple => false }) %>
         </div>
       </div>
       <div class="control-group">
