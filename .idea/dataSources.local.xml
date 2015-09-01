@@ -4,17 +4,10 @@
     <data-source name="Rails enterpriseape: development" uuid="6f830cb1-0644-4ea0-987d-22c4ba855f63">
       <user-name>tlo</user-name>
       <user-password>dfcbdfd8dfd8df98df9cdfd3</user-password>
-      <schema-pattern>development_rails.*</schema-pattern>
-      <default-schemas>development_rails.*</default-schemas>
     </data-source>
     <data-source name="Rails enterpriseape: test" uuid="592d4ff9-7a59-41eb-9ad3-a2e5bef8ea59">
       <user-name>tlo</user-name>
       <user-password>dfcbdfd8dfd8df98df9cdfd3</user-password>
-      <schema-pattern>test_rails.*</schema-pattern>
-      <default-schemas>test_rails.*</default-schemas>
-    </data-source>
-    <data-source name="Rails enterpriseape: production" uuid="c504e17d-d7c5-4c61-87bd-35af3f21c6bd">
-      <first-sync>true</first-sync>
     </data-source>
   </component>
 </project>
