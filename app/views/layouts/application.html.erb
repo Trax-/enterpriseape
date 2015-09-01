@@ -16,7 +16,7 @@
     <li><%= link_to 'Features', welcome_features_path %></li>
     <li><%= link_to 'FAQs', welcome_faq_path %></li>
     <li><%= link_to 'Pricing', welcome_pricing_path %></li>
-    <li><%= link_to 'Invoices', invoices_path %></li>
+
     <% if current_user %>
         <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
         <div class="btn-group pull-right right-nav">
