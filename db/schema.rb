@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150902131849) do
+ActiveRecord::Schema.define(version: 20150902142810) do
 
   create_table "companies", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -39,6 +39,15 @@ ActiveRecord::Schema.define(version: 20150902131849) do
     t.integer  "employee_id", limit: 4
     t.string   "status_type", limit: 255
   end
+
+  create_table "items", force: :cascade do |t|
+    t.string  "name",       limit: 255
+    t.integer "quantity",   limit: 4
+    t.string  "category",   limit: 255
+    t.integer "invoice_id", limit: 4
+  end
+
+  add_index "items", ["invoice_id"], name: "index_items_on_invoice_id", using: :btree
 
   create_table "purchases", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -74,5 +83,6 @@ ActiveRecord::Schema.define(version: 20150902131849) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "items", "invoices"
   add_foreign_key "purchases", "invoices"
 end
