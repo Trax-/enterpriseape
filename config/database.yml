@@ -1,0 +1,32 @@
+# SQLite version 3.x
+#   gem install postgresql
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'postgresql'
+#
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  username: tlo
+  password: arr26y
+  host: falcon
+  port: 3306
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: development_rails
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: test_rails
+
+production:
+  adapter: postgresql
+  database: production_postgresql
+  pool: 5
+  timeout: 5000
