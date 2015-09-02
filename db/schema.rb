@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150901174256) do
+ActiveRecord::Schema.define(version: 20150902120703) do
 
   create_table "companies", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -44,8 +44,9 @@ ActiveRecord::Schema.define(version: 20150901174256) do
     t.string   "category",   limit: 255
     t.integer  "quantity",   limit: 4
     t.integer  "invoice_id", limit: 4
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at",                                     null: false
+    t.datetime "updated_at",                                     null: false
+    t.decimal  "price",                  precision: 6, scale: 2
   end
 
   add_index "purchases", ["invoice_id"], name: "index_purchases_on_invoice_id", using: :btree
